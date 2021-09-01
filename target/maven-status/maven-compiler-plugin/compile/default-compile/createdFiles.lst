@@ -1,0 +1,17 @@
+pe/edu/ao/app/juego/Student.class
+pe/edu/ao/app/MainSpring.class
+pe/edu/ao/app/juego/JuegoAjedrez.class
+pe/edu/ao/app/juego/Juego.class
+pe/edu/ao/app/vehiculo/Motor.class
+pe/edu/ao/app/juego/Caballo.class
+pe/edu/ao/app/juego/Reina.class
+pe/edu/ao/app/Main.class
+pe/edu/ao/app/exceptions/ChoqueException.class
+pe/edu/ao/app/MainJuego.class
+pe/edu/ao/app/exceptions/MyException.class
+pe/edu/ao/app/vehiculo/CarroFormula1.class
+pe/edu/ao/app/vehiculo/Carro.class
+pe/edu/ao/app/MainColecciones.class
+pe/edu/ao/app/juego/Ficha.class
+pe/edu/ao/app/vehiculo/MotorFormula1.class
+pe/edu/ao/app/juego/HibernateUtil.class
