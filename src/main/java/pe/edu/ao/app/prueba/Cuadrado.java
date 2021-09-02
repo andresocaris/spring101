@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cuadrado extends FiguraAbstract{
-	int lado;
+	private int lado;
 	public Cuadrado(int lado){
 		super(4);
 		this.lado = lado;
@@ -12,7 +12,7 @@ public class Cuadrado extends FiguraAbstract{
 	@Override
 	public void getInfo() {
 		System.out.println("---------------INFO------------------------");
-		System.out.println("Numero de Lados: "+numeroLados);
+		System.out.println("Numero de Lados: "+this.getNumeroLados());
 		System.out.format("Es un Cuadrado con lado :%d\n",lado);
 		System.out.println("El Area es: "+area());
 		System.out.println("-------------------------------------------");

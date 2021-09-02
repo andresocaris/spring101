@@ -9,6 +9,5 @@ public class MainPrueba {
 		Cuadrado cuadrado = new Cuadrado(4);
 		cuadrado.getInfo();
 		System.out.println(cuadrado.area());
-		
 	}
 }

@@ -3,12 +3,13 @@ package pe.edu.ao.app.prueba;
 import java.util.List;
 
 public abstract class FiguraAbstract implements Figura{
-	int numeroLados;
-	String nombre="";
+	private int numeroLados;
+	private String nombre;
+
 	public FiguraAbstract( int numeroLados){
 		this.numeroLados = numeroLados;
 	}
-	public double area() {
+	double area() {
 		String nombre = getNombre();
 		if (nombre == "triangulo" ) {
 			System.out.println("");
@@ -31,5 +32,9 @@ public abstract class FiguraAbstract implements Figura{
 	public abstract List<Integer> getLados();
 	public abstract  double getArea();
 	public abstract String getNombre();
+	
+	public int getNumeroLados() {
+		return numeroLados;
+	}
 }
 

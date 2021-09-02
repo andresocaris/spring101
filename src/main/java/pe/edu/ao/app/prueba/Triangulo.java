@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Triangulo extends FiguraAbstract {
-	int lado1,lado2,lado3;
+	private int lado1,lado2,lado3;
 	public Triangulo( int lado1 , int lado2 ,int lado3 ) {
 		super(3);
 		this.lado1=lado1;
@@ -14,7 +14,7 @@ public class Triangulo extends FiguraAbstract {
 	@Override
 	public void getInfo() {
 		System.out.println("---------------INFO------------------------");
-		System.out.println("Numero de Lados: "+numeroLados);
+		System.out.println("Numero de Lados: "+this.getNumeroLados());
 		System.out.format("Es un Triangulo con lados : %d,%d,%d\n",lado1,lado2,lado3);
 		System.out.println("El Area es: "+area());
 		System.out.println("-------------------------------------------");
