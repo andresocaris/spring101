@@ -6,7 +6,7 @@ public class EstructurasMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		HashMap2<String,String> M = new HashMap2<String,String>();
+		Andres<String,String> M = new Andres<String,String>();
 		M.put2("hola", "andres");
 		M.put2("peru", "***");
 		System.out.println(M.get2("hola"));
