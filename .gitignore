@@ -1,5 +1,5 @@
 src/main/resources/
-target/classes/
+target/
 carpeta1/
 hola.txt
 .DS_Store
