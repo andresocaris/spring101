@@ -7,7 +7,6 @@ public class Caballo  implements Ficha{
 		// TODO Auto-generated method stub
 		
 	}
-
 	@Override
 	public void setPosicion(int _x, int _y) {
 		// TODO Auto-generated method stub
