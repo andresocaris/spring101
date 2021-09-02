@@ -1,24 +1,18 @@
 package pe.edu.ao.app.estructuras;
 
-import java.util.Map;
-import java.util.Objects;
 
+import java.util.Objects;
 
 public class Andres<K,V> implements Map2<K,V>{
 
 	static final float DEFAULT_LOAD_FACTOR2 = 0.75f;
 	static final int MAXIMUM_CAPACITY2 = 1 << 30;
-	
     static final int MAXIMUM_CAPACITY = 1 << 30;
-
     static final int DEFAULT_INITIAL_CAPACITY = 1 << 4;
-    
     static final int TREEIFY_THRESHOLD = 8;
-
     static final int MIN_TREEIFY_CAPACITY = 64;
     
     int modCount;
-
     int threshold2;
 
 	// fields
@@ -163,12 +157,10 @@ public class Andres<K,V> implements Map2<K,V>{
 		
 		
 	}
-
 	private Node2<K, V> newNode2(int hash2, K key2, V value2, Node2<K,V> next2) {
 		// TODO Auto-generated method stub
 		return new Node2<>(hash2, key2, value2, next2);
 	}
-
 	private Node2<K, V>[] resize() {
         Node2<K,V>[] oldTab2 = table2;
         
