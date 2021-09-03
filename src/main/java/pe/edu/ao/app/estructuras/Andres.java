@@ -1,26 +1,22 @@
 package pe.edu.ao.app.estructuras;
 
-
 import java.util.Objects;
 
 public class Andres<K,V> implements Map2<K,V>{
-
-	static final float DEFAULT_LOAD_FACTOR2 = 0.75f;
-	static final int MAXIMUM_CAPACITY2 = 1 << 30;
+	static final float DEFAULT_LOAD_FACTOR = 0.75f;
     static final int MAXIMUM_CAPACITY = 1 << 30;
     static final int DEFAULT_INITIAL_CAPACITY = 1 << 4;
     static final int TREEIFY_THRESHOLD = 8;
     static final int MIN_TREEIFY_CAPACITY = 64;
     
-    int modCount;
     int threshold2;
 
 	// fields
 	
 	int size2;
 	int modCount2;
-	Node2<K,V>[] table2;
 	float loadFactor2;
+	Node2<K,V>[] table2;
 	
 	@Override
 	public int size2() {
@@ -41,6 +37,7 @@ public class Andres<K,V> implements Map2<K,V>{
         int h2;
         return (key2 == null) ? 0 : (h2 = key2.hashCode()) ^ (h2 >>> 16);
     }
+	
 	private  Node2<K,V> getNode2(Object key2) {
         Node2<K,V>[] tab2;
         Node2<K,V> first2, e2; 
@@ -62,9 +59,7 @@ public class Andres<K,V> implements Map2<K,V>{
         		}while((e2 = e2.next2) != null);
         		
         	}
-        	return null;
         }
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -86,12 +81,14 @@ public class Andres<K,V> implements Map2<K,V>{
 	}
 	
     void afterNodeAccess2(Node2<K,V> p) { }
+    
     void afterNodeInsertion2(boolean evict) { }
-
 
 	private V putVal2(int hash2, K key2, V value2, boolean onlyIfAbsent, boolean evict) {
 		
-        Node2<K,V>[] tab2; Node2<K,V> p2; int n2, i2;
+        Node2<K,V>[] tab2; 
+        Node2<K,V> p2; 
+        int n2, i2;
         
         if ((tab2 = table2) == null || (n2 = tab2.length) == 0)
             n2 = (tab2 = resize()).length;
@@ -127,7 +124,7 @@ public class Andres<K,V> implements Map2<K,V>{
             }
         }
         
-        ++modCount;
+        ++modCount2;
         if (++size2 > threshold2)
             resize();
         afterNodeInsertion2(evict);
@@ -157,10 +154,12 @@ public class Andres<K,V> implements Map2<K,V>{
 		
 		
 	}
+	
 	private Node2<K, V> newNode2(int hash2, K key2, V value2, Node2<K,V> next2) {
 		// TODO Auto-generated method stub
 		return new Node2<>(hash2, key2, value2, next2);
 	}
+	
 	private Node2<K, V>[] resize() {
         Node2<K,V>[] oldTab2 = table2;
         
@@ -178,7 +177,7 @@ public class Andres<K,V> implements Map2<K,V>{
 				newCap2 = oldThr2;
 		else {
 			newCap2 = DEFAULT_INITIAL_CAPACITY;
-            newThr2 = (int)(DEFAULT_LOAD_FACTOR2 * DEFAULT_INITIAL_CAPACITY);
+            newThr2 = (int)(DEFAULT_LOAD_FACTOR * DEFAULT_INITIAL_CAPACITY);
 		}
         if (newThr2 == 0) {
             float ft2 = (float)newCap2 * loadFactor2;
@@ -243,52 +242,41 @@ public class Andres<K,V> implements Map2<K,V>{
 	@Override
 	public void clear2() {
 		// TODO Auto-generated method stub
-		
 	}
+	
 	static class Node2<K,V> implements Map2.Entry2<K,V>{
-		
 		final int hash2;
         final K key2;
         V value2;
         Node2<K,V> next2;
-        
         Node2(int hash2, K key2, V value2, Node2<K,V> next2) {
             this.hash2 = hash2;
             this.key2 = key2;
             this.value2 = value2;
             this.next2 = next2;
         }
-        
 		@Override
 		public K getKey2() {
 			return key2;
 		}
-
 		@Override
 		public V getValue2() {
 			return value2;
 		}
-
 		@Override
 		public V setValue2(V newValue2) {
-			// TODO Auto-generated method stub
 			V oldValue = value2;
             value2 = newValue2;
             return oldValue;
 		}
-
 		@Override
 		public boolean equals2(Object o) {
 			// TODO Auto-generated method stub
 			return false;
 		}
-
 		@Override
 		public int hashCode2() {
 			return Objects.hashCode(key2) ^ Objects.hashCode(value2);
 		}
-		
 	}
-
-	
 }

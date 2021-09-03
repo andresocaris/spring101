@@ -1,6 +1,6 @@
 package pe.edu.ao.app.estructuras;
 
-
+import java.util.ArrayList;
 
 public class EstructurasMain {
 
@@ -14,6 +14,11 @@ public class EstructurasMain {
 		System.out.println(M.get2("peru"));
 		
 		System.out.println(M.size2);
+		
+		
+		
+		ArrayList<Integer> arrayList = new ArrayList();
+		
 	}
 
 }
