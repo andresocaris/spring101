@@ -278,5 +278,6 @@ public class Andres<K,V> implements Map2<K,V>{
 		public int hashCode2() {
 			return Objects.hashCode(key2) ^ Objects.hashCode(value2);
 		}
+		public String toString() { return key2 + "=" + value2; }
 	}
 }
