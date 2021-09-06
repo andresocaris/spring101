@@ -2,10 +2,7 @@ package pe.edu.ao.app.juego;
 
 import org.hibernate.SessionFactory;
 
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.springframework.beans.factory.annotation.Autowired;
 
