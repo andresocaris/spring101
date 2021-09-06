@@ -12,14 +12,6 @@ import java.util.LinkedList;
 import pe.edu.ao.app.exceptions.MyException;
 
 public class MainColecciones {
-	/**
-	 * @param args
-	 * @throws MyException
-	 */
-	/**
-	 * @param args
-	 * @throws MyException
-	 */
 	public static void main(String[] args) throws MyException {
 		long start = System.currentTimeMillis();
 		// Array
@@ -32,7 +24,7 @@ public class MainColecciones {
 			System.out.println("numero:" + a);
 		}
 		// Array List
-		ArrayList<Integer> arrayList = new ArrayList();
+		ArrayList<Integer> arrayList = new ArrayList<>();
 		arrayList.add(56);
 		arrayList.add(4);
 		arrayList.add(5);
@@ -63,10 +55,10 @@ public class MainColecciones {
 		Integer pos = arrayList.indexOf(545);
 		System.out.println(pos);
 
-		ArrayList<Integer> arrayList2 = (ArrayList) arrayList.clone();
-		Object[] object = arrayList2.toArray();
-		System.out.println("array object");
-		System.out.println(object);
+//		ArrayList<Integer> arrayList2 = (ArrayList) arrayList.clone();
+//		Object[] object = arrayList2.toArray();
+//		System.out.println("array object");
+//		System.out.println(object);
 
 		//LinkedList
 		LinkedList<Integer> linkedList = new LinkedList<Integer>();
@@ -119,7 +111,7 @@ public class MainColecciones {
 		System.out.println(linkedHashMap);
 		
 		try {
-			Integer num = 100/0;
+			//Integer num = 100/0;
 		}catch(RuntimeException e ) {
 			e.printStackTrace();
 		}
