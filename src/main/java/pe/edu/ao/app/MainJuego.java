@@ -3,8 +3,7 @@ package pe.edu.ao.app;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.hibernate.Session;
-import org.hibernate.Transaction;
+//import org.hibernate.Session;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,12 +11,12 @@ import org.springframework.context.annotation.Configuration;
 
 import pe.edu.ao.app.juego.Caballo;
 import pe.edu.ao.app.juego.Ficha;
-import pe.edu.ao.app.juego.HibernateUtil;
+//import pe.edu.ao.app.juego.HibernateUtil;
 import pe.edu.ao.app.juego.Juego;
 import pe.edu.ao.app.juego.JuegoAjedrez;
 import pe.edu.ao.app.juego.Reina;
-import pe.edu.ao.app.juego.Student;
-import pe.edu.ao.app.vehiculo.Carro;
+
+
 
 @Configuration
 @ComponentScan
@@ -41,13 +40,16 @@ public class MainJuego {
 		JuegoAjedrez juegoAjedrez2 = (JuegoAjedrez)juegoAjedrez.clonar();
 		System.out.println(juegoAjedrez);
 		System.out.println(juegoAjedrez2);
+		
+		
+		((AnnotationConfigApplicationContext)ctx).close();
 	}
 	public static void f() {
-		Session session = HibernateUtil.getSessionFactory().openSession();
-		Transaction transaction=null; 
-		transaction = session.beginTransaction();
-        List<Student> x = session.createQuery("select p from Student p").list(); 
-		System.out.println(x.get(0));
+//		Session session = HibernateUtil.getSessionFactory().openSession();
+//		Transaction transaction=null; 
+//		transaction = session.beginTransaction();
+//        List<Student> x = session.createQuery("select p from Student p").list(); 
+//		System.out.println(x.get(0));
 		
 	}
 }

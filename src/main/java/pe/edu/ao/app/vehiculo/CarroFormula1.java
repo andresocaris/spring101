@@ -1,6 +1,5 @@
 package pe.edu.ao.app.vehiculo;
 
-import java.util.Vector;
 
 import org.springframework.stereotype.Component;
 

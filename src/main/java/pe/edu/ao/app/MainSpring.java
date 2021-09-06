@@ -17,6 +17,6 @@ public class MainSpring {
 		
 		carro.avanzar();
 		carro.detener();
-		
+		((AnnotationConfigApplicationContext)ctx).close();
 	}
 }

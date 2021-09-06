@@ -12,14 +12,6 @@ import java.util.LinkedList;
 import pe.edu.ao.app.exceptions.MyException;
 
 public class MainColecciones {
-	/**
-	 * @param args
-	 * @throws MyException
-	 */
-	/**
-	 * @param args
-	 * @throws MyException
-	 */
 	public static void main(String[] args) throws MyException {
 		long start = System.currentTimeMillis();
 		// Array
@@ -32,7 +24,7 @@ public class MainColecciones {
 			System.out.println("numero:" + a);
 		}
 		// Array List
-		ArrayList<Integer> arrayList = new ArrayList();
+		ArrayList<Integer> arrayList = new ArrayList<>();
 		arrayList.add(56);
 		arrayList.add(4);
 		arrayList.add(5);
@@ -63,10 +55,10 @@ public class MainColecciones {
 		Integer pos = arrayList.indexOf(545);
 		System.out.println(pos);
 
-		ArrayList<Integer> arrayList2 = (ArrayList) arrayList.clone();
-		Object[] object = arrayList2.toArray();
-		System.out.println("array object");
-		System.out.println(object);
+//		ArrayList<Integer> arrayList2 = (ArrayList<Integer>) arrayList.clone();
+//		Object[] object = arrayList2.toArray();
+//		System.out.println("array object");
+//		System.out.println(object);
 
 		//LinkedList
 		LinkedList<Integer> linkedList = new LinkedList<Integer>();
@@ -118,19 +110,26 @@ public class MainColecciones {
 		linkedHashMap.put(null, 5);
 		System.out.println(linkedHashMap);
 		
-		try {
-			Integer num = 100/0;
-		}catch(RuntimeException e ) {
-			e.printStackTrace();
-		}
+//		try {
+//			Integer num = 100/0;
+//		}catch(RuntimeException e ) {
+//			e.printStackTrace();
+//		}
 		System.out.println("paso por aqui");
 		System.err.println("esto es un error");
+		System.out.println("------------");
 		Integer num2=100;
-		if ( num2 == 10 ) {
-			throw new MyException();
+		try {
+//			int p=1,q=0;
+//			p = p/q;
+			if ( num2.equals(100) ) {
+				throw new MyException(" el num2 es 100:");
+			}
+		}catch(MyException e){
+			e.printStackTrace();
 		}
 		
-		System.out.println("here");
+		System.out.println("here andres");
 		long end = System.currentTimeMillis();
 		NumberFormat formatter = new DecimalFormat("#0.00000");
 		System.out.print("Execution time is " + formatter.format((end - start) / 1000d) + " seconds");
