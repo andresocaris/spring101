@@ -12,6 +12,19 @@ import java.util.LinkedList;
 import pe.edu.ao.app.exceptions.MyException;
 
 public class MainColecciones {
+	public static void funcion() {
+		Integer num2=100;
+		try {
+//			int p=1,q=0;
+//			p = p/q;
+			if ( num2.equals(100) ) {
+				throw new MyException(" el num2 es 100:");
+			}
+		}catch(MyException e){
+			e.printStackTrace();
+		}
+	}
+	
 	public static void main(String[] args) throws MyException {
 		long start = System.currentTimeMillis();
 		// Array
@@ -118,17 +131,8 @@ public class MainColecciones {
 		System.out.println("paso por aqui");
 		System.err.println("esto es un error");
 		System.out.println("------------");
-		Integer num2=100;
-		try {
-//			int p=1,q=0;
-//			p = p/q;
-			if ( num2.equals(100) ) {
-				throw new MyException(" el num2 es 100:");
-			}
-		}catch(MyException e){
-			e.printStackTrace();
-		}
 		
+		funcion();
 		System.out.println("here andres");
 		long end = System.currentTimeMillis();
 		NumberFormat formatter = new DecimalFormat("#0.00000");
