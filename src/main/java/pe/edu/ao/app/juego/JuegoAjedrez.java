@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class JuegoAjedrez implements Juego{
 	private List<Ficha>  fichas;
+		
 	private List<Ficha> fichasIngresadasAlTablero=new ArrayList<>();
 	private int posicionUltimaFichaIngresada=0;
 	private int solucionEncontrada = 0;

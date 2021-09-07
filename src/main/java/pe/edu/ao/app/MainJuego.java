@@ -13,33 +13,41 @@ import pe.edu.ao.app.juego.Caballo;
 import pe.edu.ao.app.juego.Ficha;
 //import pe.edu.ao.app.juego.HibernateUtil;
 import pe.edu.ao.app.juego.Juego;
-import pe.edu.ao.app.juego.JuegoAjedrez;
+
 import pe.edu.ao.app.juego.Reina;
-
-
 
 @Configuration
 @ComponentScan
 public class MainJuego {
 	public static void main(String[] args) {
 		// inyeccion de dependencia con inversion de control
+		
 		ApplicationContext ctx = new AnnotationConfigApplicationContext(MainJuego.class);
-
+		// mutable 
 		Juego juegoAjedrez = ctx.getBean(Juego.class);
 		List<Ficha> fichas = new ArrayList<>();
 		int cantidadFichasIngresadas = 7;
+		
+		//metiendo elementos
 		for (int i = 0; i < cantidadFichasIngresadas; i++) {
 			Ficha reina = new Reina();
 			fichas.add(reina);
 		}
-		Ficha caballo = new Caballo();
-		fichas.add(caballo);
+		
 		juegoAjedrez.setFichas(fichas);
+		
 		juegoAjedrez.imprimirPosiciones();
 		
-		JuegoAjedrez juegoAjedrez2 = (JuegoAjedrez)juegoAjedrez.clonar();
-		System.out.println(juegoAjedrez);
-		System.out.println(juegoAjedrez2);
+		fichas.add(new Caballo());
+		
+		System.out.println("*******");
+		
+		juegoAjedrez.imprimirPosiciones();
+		juegoAjedrez.obtenerPosicionesSinAtacarse();
+		
+		//JuegoAjedrez juegoAjedrez2 = (JuegoAjedrez)juegoAjedrez.clonar();
+		//System.out.println(juegoAjedrez);
+		//System.out.println(juegoAjedrez2);
 		
 		
 		((AnnotationConfigApplicationContext)ctx).close();

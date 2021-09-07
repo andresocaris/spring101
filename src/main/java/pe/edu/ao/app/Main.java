@@ -11,7 +11,6 @@ public class Main {
 		//inyeccion de dependencia con inversion de control
 		
 		Motor motor = new MotorFormula1();
-		
 		Carro carro = new CarroFormula1(motor);
 		
 		// usar las instancias generadas
