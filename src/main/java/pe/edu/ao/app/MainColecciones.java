@@ -124,6 +124,28 @@ public class MainColecciones {
 		
 		System.out.println("here");
 		long end = System.currentTimeMillis();
+		
+		String cad="hola";
+		String cad2="hola";
+		System.out.println(cad.hashCode());
+
+		System.out.println(cad2.hashCode());
+		
+		
+		for (int i=0;i<100000;i++) {
+			cad+='h';
+		}
+		
+		
+		
+		System.out.println(cad.hashCode());
+
+		//cad = "peru";
+		//System.out.println(cad.hashCode());
+		
+		
+		
+		
 		NumberFormat formatter = new DecimalFormat("#0.00000");
 		System.out.print("Execution time is " + formatter.format((end - start) / 1000d) + " seconds");
 	}
