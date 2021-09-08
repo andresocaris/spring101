@@ -4,7 +4,7 @@ import java.util.List;
 
 public abstract class FiguraAbstract implements Figura{
 	private int numeroLados;
-	private String nombre;
+//	private String nombre;
 
 	public FiguraAbstract( int numeroLados){
 		this.numeroLados = numeroLados;

@@ -133,10 +133,13 @@ public class Andres<K,V> implements Map2<K,V>{
 	}
 
 	private void treeifyBin(Node2<K, V>[] tab2, int hash2) {	
-		int n, index; Node2<K,V> e;
+		int n;
+		//int index;
+		Node2<K,V> e;
         if (tab2 == null || (n = tab2.length) < MIN_TREEIFY_CAPACITY)
             resize();
-        else if ((e = tab2[index = (n - 1) & hash2]) != null) {
+        //else if ((e = tab2[index = (n - 1) & hash2]) != null) {
+       
 //            TreeNode<K,V> hd = null, tl = null;
 //            do {
 //                TreeNode<K,V> p = replacementTreeNode(e, null);
@@ -150,7 +153,7 @@ public class Andres<K,V> implements Map2<K,V>{
 //            } while ((e = e.next) != null);
 //            if ((tab[index] = hd) != null)
 //                hd.treeify(tab);
-        }
+     //   }
 		
 		
 	}

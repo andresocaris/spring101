@@ -1,7 +1,6 @@
 package otraspruebas;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.TreeSet;
@@ -43,7 +42,7 @@ public class MainDemo {
 		miInterfaz.f(100);
 		
 		
-		ArrayList<Integer> v = new ArrayList();
+		ArrayList<Integer> v = new ArrayList<>();
 		v.add(10);
 		v.add(3);
 		v.add(199);
@@ -51,7 +50,7 @@ public class MainDemo {
 		//v.stream().filter(x-> x < 100).forEach(System.out::println);
 		v.stream().sorted((x,y)-> y.compareTo(x)).forEach(System.out::println);
 		
-		LinkedHashSet<Integer> h = new LinkedHashSet();
+		LinkedHashSet<Integer> h = new LinkedHashSet<>();
 		h.add(200);
 		h.add(1);
 		h.add(12);
@@ -66,7 +65,7 @@ public class MainDemo {
 			System.out.println(val);
 		}
 		
-		TreeSet<Object> v3=new TreeSet();
+		TreeSet<Object> v3=new TreeSet<>();
 		v3.add("String");
 		v3.add("hola");
 		v3.add("4554");
@@ -102,11 +101,11 @@ public class MainDemo {
 //		});
 		String cad1="Andres";
 		String cad2="Mark";
-		Integer n1=102;
-		Integer n4= 1000;
-		Integer n2=100+2;
+//		Integer n1=102;
+//		Integer n4= 1000;
+//		Integer n2=100+2;
 		Clase1 c1= new Clase1(100,"jjaja");
-		Clase1 cc= new Clase1(1003,"jjaja");
+//		Clase1 cc= new Clase1(1003,"jjaja");
 		Clase1 c2 = new Clase1(100,"holas");
 		
 		if (c1.num1==c2.num1) {

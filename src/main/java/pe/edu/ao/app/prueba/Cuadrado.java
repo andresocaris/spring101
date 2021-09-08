@@ -23,7 +23,7 @@ public class Cuadrado extends FiguraAbstract{
 	}
 	@Override
 	public List<Integer> getLados() {
-		List<Integer> lados = new ArrayList();
+		List<Integer> lados = new ArrayList<>();
 		for (int i=0;i<4;i++)lados.add(lado);
 		return  lados;
 	}

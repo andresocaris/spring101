@@ -1,6 +1,5 @@
 package pe.edu.ao.app.prueba;
 
-import java.util.HashMap;
 
 public class MainPrueba {
 	public static void main(String[] args) {
@@ -13,7 +12,7 @@ public class MainPrueba {
 		System.out.println(cuadrado.area());
 	
 	
-		HashMap<String,String> hashMap = new HashMap<String,String>(); 
+		//HashMap<String,String> hashMap = new HashMap<String,String>(); 
 	
 	}
 }

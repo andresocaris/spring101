@@ -25,7 +25,7 @@ public class Triangulo extends FiguraAbstract {
 	}
 	@Override
 	public List<Integer> getLados() {
-		List<Integer> lados = new ArrayList();
+		List<Integer> lados = new ArrayList<>();
 		lados.add(lado1);
 		lados.add(lado2);
 		lados.add(lado3);
