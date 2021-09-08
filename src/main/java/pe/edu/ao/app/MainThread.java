@@ -1,6 +1,5 @@
 package pe.edu.ao.app;
 
-
 import java.util.Vector;
 
 class Counter{

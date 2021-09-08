@@ -10,7 +10,6 @@ public class MainSpring2 {
 		ApplicationContext appContext = new ClassPathXmlApplicationContext("beans.xml");
 		Persona m = (Persona)appContext.getBean(Persona.class);
 		System.out.println(m.saludo());
-		
 		((ClassPathXmlApplicationContext)appContext).close();
 	}
 }
