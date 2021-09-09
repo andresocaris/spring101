@@ -145,8 +145,11 @@ public class MainDemo {
 		System.out.println(x.get(p3));
 		System.out.println(val.hashCode());
 		String h1="hola";
-		String h2="hola";
-		if (h1==h2) {
+		//String p33 = "fdf";
+		String h2="ho";
+		h2 += "la";
+		//String h2 = new String("hola");
+		if (h1 == h2) {
 			System.out.println("fdf");
 		}
 		
