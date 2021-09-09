@@ -11,4 +11,7 @@ public class Clase2 extends Clase1 {
 	void f() {
 		System.out.println("es una clase 2 ");
 	}
+	
+	
+	
 }

@@ -1,13 +1,21 @@
 package otraspruebas;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.TreeSet;
 
 public class MainDemo {
 
-	public static void main(String[] args) throws MiError {
+	public static void f() {
+		int vap=10;
+		
+		if (vap == 10 ) {
+			throw new MiError();
+		}
+	}
+	public static void main(String[] args){
 		// TODO Auto-generated method stub
 //		StaticDemo o1 = new StaticDemo();
 //		o1.x= 10;
@@ -20,14 +28,11 @@ public class MainDemo {
 //		
 //		Clase2 o3 = new Clase2();
 //		o3.f();
-//		int val=10;
-//		
-//		if (val == 10 ) {
-//			throw new MiError();
-//		}
-//		
-//		int p = 10;
-//		System.out.println("El valor es: " + p);
+		//f();
+		//f();
+		
+		int p = 10;
+		System.out.println("El valor es: " + p);
 		
 		MiInterfaz miInterfaz = (val,val2)->(val+val2);
 		System.out.println(miInterfaz.f(100, 3223));
@@ -123,6 +128,27 @@ public class MainDemo {
 		});
 		
 		System.out.println(array2);
+		System.out.println("111111");
+		HashMap<Clase1,Integer> x = new HashMap<>();
+		
+		
+		Clase1 p1 = new Clase1(100,"hola");
+		Clase1 p2 = new Clase1(200,"peru");
+		Clase1 p3 = new Clase1(100,"hola");
+		
+		
+		x.put(p1,23);
+		x.put(p2,4);
+		
+		Integer val = 2000000000+1000000000;
+		System.out.println(x.get(p1));
+		System.out.println(x.get(p3));
+		System.out.println(val.hashCode());
+		String h1="hola";
+		String h2="hola";
+		if (h1==h2) {
+			System.out.println("fdf");
+		}
 		
 	}
 
